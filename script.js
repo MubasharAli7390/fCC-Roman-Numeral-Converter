@@ -31,11 +31,16 @@ const decimalToArabic = (number) => {
 };
 
 const output = () => {
+    result.classList.remove('hidden');
+
     if (input.value == "") {
+        result.style.color = "red";
         result.innerText = "Please enter a valid number";
     } else if (input.value <= 0) {
+        result.style.color = "red";
         result.innerText = "Please enter a number greater than or equal to 1";
     } else if (input.value > 3999) {
+        result.style.color = "red";
         result.innerText = "Please enter a number less than or equal to 3999";
     } else {
         let answer = decimalToArabic(input.value);

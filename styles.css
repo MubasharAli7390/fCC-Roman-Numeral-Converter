@@ -1,0 +1,64 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #0CAADC;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+  
+}
+
+#container {
+    display: grid;
+    place-content: center;
+    gap: 4px;
+}
+
+#number {
+    font-size: 2rem;
+    text-align: center;
+    border: 4px solid black;
+    background-color:antiquewhite;
+}
+
+#convert-btn {
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: #7DE2D1;
+}
+
+#output {
+    font-size: 2rem;
+    border: 1px solid black;
+    margin-top: 0px;
+    text-align: center;
+    border: 4px solid black;
+    background-color: antiquewhite;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 2.5rem;
+        
+    }
+    #number {
+        font-size: 1.5rem;
+    }
+    #convert-btn {
+        font-size: 1.5rem;
+    }
+    #output {
+        font-size: 1.5rem;
+    }
+  }
+
+
